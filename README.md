@@ -1,10 +1,10 @@
-# [Name of the Project] : [Team Number]
+# [Attack on Quack] : [Team 14]
 # Members
-Project Manager: [Name] ([GitHub Name])\
-Communications Lead: [Name] ([GitHub Name])\
-Git Master: [Name] ([GitHub Name])\
-Design Lead: [Name] ([GitHub Name])\
-Quality Assurance Tester: [Name] ([GitHub Name])
+Project Manager: [Kenny] ([gitkenny-debug])\
+Communications Lead: [Jay] ([GitHub Name])\
+Git Master: [Daniel] ([Zernullo])\
+Design Lead: [Aaron] ([Zolvifox])\
+Quality Assurance Tester: [Adi] ([Adianand42])
 
 # About Our Software
 
