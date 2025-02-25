@@ -1,4 +1,4 @@
-# [Name of the Project] : [Team Number]
+# [Attack On Quack] : [Kenny, Jay, Daniel, Aaron, Adi]
 # Members
 Project Manager: [Ken Nguyen] ([kenny.9369])\
 Communications Lead: [Jakyran Pierson] ([jakyran])\
