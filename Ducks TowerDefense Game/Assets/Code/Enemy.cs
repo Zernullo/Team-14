@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour{
     public float speed = 10f;//Speed
-    private Transform target;//next target
+    private Transform target;//next target of wavepoint
     private int wavepointIdenx = 0;//incrementing to make sure we have the correct number of waypoint
 
 

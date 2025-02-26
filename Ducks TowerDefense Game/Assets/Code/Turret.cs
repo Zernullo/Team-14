@@ -3,14 +3,26 @@ using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 //Ep 4, lock the turret to enemy around 15 min
+//Ep 5, creating a bullet and setting its position, around 6 min
 public class Turret : MonoBehaviour{
 
-    private Transform target;
-    public float range = 3f;
-    public string enemyTag = "Enemy";
-    public float rotationSpeed = 5f; // Speed at which the turret rotates
+    private Transform target; //turret targeting the target, it is hidden because private, but if public you will see active change as enemy come into range
 
-    //public Transform partToRotate;//I dont think we need it
+
+    [Header("Attributes")]//Bascially setup a header on unity
+    public float range = 3f; //Range of the turret
+    public float fireRate = 1f;
+    private float fireCountDown = 0f;
+
+
+
+    [Header("Unity SetUp Fields")]
+    public string enemyTag = "Enemy"; //Set an asset on unity to the enemy tab, basically setting up the target to the enemy
+    public float rotationSpeed = 5f; // Speed at which the turret rotates
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+    
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){
@@ -56,6 +68,26 @@ public class Turret : MonoBehaviour{
         // Smoothly rotate the turret towards the target
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
 
+
+
+        if(fireCountDown <= 0f){
+            Shoot();
+            fireCountDown = 1f / fireRate;
+        }
+
+        fireCountDown -= Time.deltaTime;
+
+    }
+
+    void Shoot(){
+        //Debug.Log("Shoot");//goes to the console on unity and check if it printing out something, making sure the code is working
+
+        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bullet = bulletGO.GetComponent<Bullet>();
+
+        if(bullet != null){
+            bullet.Seek(target);
+        }
     }
 
     void OnDrawGizmosSelected(){ //Draw the range of the turret
