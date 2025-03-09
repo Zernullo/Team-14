@@ -6505,7 +6505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a753e59632948ac4ba0471fbe12893c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyText: {fileID: 0}
+  moneyText: {fileID: 1270625017}
   money: 500
 --- !u!4 &735994382 stripped
 Transform:
@@ -8534,7 +8534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7894981185029053768, guid: cef25e67169422847b89bdff835cc69b, type: 3}
-  spawnPoint: {fileID: 9040574166794226091, guid: 2048f4ed433f5e1478bcff47f488ae9e, type: 3}
+  spawnPoint: {fileID: 214428709}
   waveTime: 5.5
   CountDownTimerText: {fileID: 776213950}
 --- !u!4 &1100544010
@@ -9203,7 +9203,7 @@ Transform:
   m_GameObject: {fileID: 1148927992}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.535496, y: -1.1817437, z: 0}
+  m_LocalPosition: {x: -13.25, y: -1.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10192,7 +10192,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -363, y: 231.87231}
+  m_AnchoredPosition: {x: -275, y: 192}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1270625017

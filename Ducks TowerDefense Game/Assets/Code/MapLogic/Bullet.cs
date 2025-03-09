@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
-        economy = FindObjectOfType<Economy>();
+        economy = Object.FindFirstObjectByType<Economy>();
     }
 
     public void Seek(Transform _target)
@@ -45,8 +45,9 @@ public class Bullet : MonoBehaviour
         {
             economy.AddMoney(20);
         }
-
+        
         Destroy(target.gameObject);
         Destroy(gameObject);
+        return;
     }
 }
