@@ -6505,7 +6505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a753e59632948ac4ba0471fbe12893c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyText: {fileID: 1270625017}
+  moneyText: {fileID: 0}
   money: 500
 --- !u!4 &735994382 stripped
 Transform:
@@ -6711,8 +6711,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -872, y: -198}
-  m_SizeDelta: {x: 335.87, y: 129.64}
+  m_AnchoredPosition: {x: -352.63, y: -138}
+  m_SizeDelta: {x: 180.75, y: 58.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &776213950
 MonoBehaviour:
