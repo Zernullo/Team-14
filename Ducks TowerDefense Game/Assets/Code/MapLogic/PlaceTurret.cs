@@ -24,19 +24,21 @@ public class PlaceTurret : MonoBehaviour{
 
 
     public GameObject turretPrefab;
+    public GameObject other_Turret_Prefab;  //Turret
     private GameObject turretBuilding;
 
 
     public GameObject BuildTurret(){
         return turretBuilding;
     }
-    void Start(){
-        turretBuilding = turretPrefab;
-    }
+    // void Start(){
+    //     turretBuilding = turretPrefab;
+    // }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    //You can choice which turret to build
+    public void setTurretToBuild(GameObject turret){
+        turretBuilding = turret;
     }
+    // Update is called once per frame
+   
 }
